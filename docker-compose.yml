@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./ai-engine
+      dockerfile: Dockerfile
+    container_name: agents-backend
+    env_file:
+      - ./ai-engine/.env
+    ports:
+      - "8000:8000"
+    networks:
+      - agents-net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: agents-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - agents-net
+
+networks:
+  agents-net:
+    driver: bridge 
