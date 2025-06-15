@@ -1,0 +1,93 @@
+route_request:
+  description: >
+    {agent_role}
+    
+    {agent_backstory}
+    
+    Your goal: {agent_goal}
+    
+    You need to determine the appropriate agent to handle the following query:
+    
+    "{query}"
+    
+    Your job is to analyze the query and decide if it should be handled by:
+    1. The Employment Expert - for questions about employment contracts, salaries, stock options, vesting queries.
+    2. The Compliance Specialist - for questions about regulatory compliance, data protection, legal requirements, or when a user question has something like 'Can the platform help me...' or 'How does the platform...'.
+    3. The Equity Management Expert - for questions about equity management, shareholders, directors, cap tables, voting rights, seed rounds, funding, share classes or generally anything else equity-related.
+      - please note that if a query contains "Can the platform help me..." or "How does the platform..." then it should be handled by the Compliance Specialist, despite mentioning equity.
+
+    Routing guidelines:
+    {routing_guidelines}
+    
+    Please maintain a {tone} tone in your response.
+    
+    Output only the name of the agent who should handle this query (e.g., "Employment Expert", "Compliance Specialist", or "Equity Management Expert")
+  expected_output: The name of the agent to handle the query (either "Employment Expert", "Compliance Specialist", or "Equity Management Expert")
+
+answer_employment_question:
+  description: >
+    {agent_role}
+    
+    {agent_backstory}
+    
+    Your goal: {agent_goal}
+    
+    You need to answer the following question about employment or stock options:
+    
+    "{query}"
+    
+    Your areas of expertise include:
+    {expertise_areas}
+    
+    Based on this question, provide expert guidance on employment contracts, stock options, or related areas.
+
+    Use the following relevant information from our company documents to inform your answer:
+    
+    {relevant_context}
+    
+    Response guidelines:
+    {response_guidelines}
+    
+    Please maintain a {tone} tone in your response.
+  expected_output: A detailed answer to the employment/options question based on company documents and best practices
+
+answer_compliance_question:
+  description: >
+    {agent_role}
+    
+    {agent_backstory}
+    
+    Your goal: {agent_goal}
+    
+    You need to answer the following question about compliance and regulatory requirements:
+    
+    "{query}"
+    
+    Platform capabilities:
+    {platform_capabilities}
+    
+    Response guidelines:
+    {response_guidelines}
+    
+    Please maintain a {tone} tone in your response.
+    
+    Based on this question, provide accurate information about compliance requirements, regulatory obligations, or other relevant details.
+  expected_output: A detailed answer about compliance and regulatory requirements that addresses the query
+
+answer_equity_question:
+  description: >
+    {agent_role}
+    
+    {agent_backstory}
+    
+    Your goal: {agent_goal}
+    
+    You need to answer the following question about equity management, shareholders, or company structure:
+    
+    "{query}"
+    
+    Your areas of expertise include:
+    {expertise_areas}
+    
+    Please maintain a {tone} tone in your response.
+  expected_output: A detailed, data-driven answer based on the company's equity and shareholding information 

@@ -1,0 +1,1 @@
+from .document_store import document_store, initialize_document_store 

@@ -1,0 +1,33 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="agents",
+    version="0.1.0",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    install_requires=[
+        "openai>=1.69.0",
+        "instructor>=1.7.8",
+        "pydantic>=2.11.1",
+        "python-dotenv>=1.1.0",
+        "pyyaml>=6.0.2",
+        "numpy<2.0.0",
+        "pandas>=2.0.0",
+        "lancedb>=0.21.2",
+        "langchain-core>=0.1.28",
+        "langchain>=0.0.335",
+        "langchain-openai>=0.0.7",
+        "azure-storage-blob>=12.17.0",
+        "aiohttp>=3.11.14",
+        "httpx>=0.27.2",
+        "requests>=2.32.3",
+        "tenacity>=9.0.0",
+        "coloredlogs>=15.0.1",
+        "fastapi>=0.115.12",
+        "uvicorn>=0.34.0",
+        "gunicorn>=20.1.0",
+        "python-multipart>=0.0.6",
+        "python-docx>=0.8.11",
+    ],
+    python_requires=">=3.10",
+) 

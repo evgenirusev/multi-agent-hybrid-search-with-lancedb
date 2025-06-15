@@ -1,0 +1,35 @@
+# Core dependencies
+openai>=1.69.0
+instructor>=1.7.8
+pydantic>=2.11.1
+python-dotenv>=1.1.0
+pyyaml>=6.0.2
+numpy<2.0.0
+pandas>=2.0.0
+
+# LanceDB for RAG
+lancedb>=0.21.2
+
+# LangChain components
+langchain-core>=0.1.28
+langchain>=0.0.335
+langchain-openai>=0.0.7
+
+# Azure dependencies
+azure-storage-blob>=12.17.0
+
+# HTTP and networking
+aiohttp>=3.11.14
+httpx>=0.27.2
+requests>=2.32.3
+
+# Utilities
+tenacity>=9.0.0
+coloredlogs>=15.0.1
+
+# Web framework
+fastapi>=0.115.12
+uvicorn>=0.34.0
+gunicorn>=20.1.0
+python-multipart>=0.0.6
+python-docx>=0.8.11
