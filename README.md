@@ -1,6 +1,8 @@
 # Agents Platform
 
-<img src="images/agent-architecture.png" alt="System Architecture" style="width:80%;max-width:900px;display:block;margin:auto;" />
+<div align="center">
+  <img src="images/agent-architecture.png" alt="System Architecture" style="width:80%;max-width:900px;" />
+</div>
 <!-- Optionally, add a project logo/banner above: ![Project Banner](images/banner.png) -->
 
 ## Table of Contents
