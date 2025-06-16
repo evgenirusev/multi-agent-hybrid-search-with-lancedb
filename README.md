@@ -3,14 +3,7 @@
 <div align="center">
   <img src="images/agent-architecture.png" alt="System Architecture" style="width:80%;max-width:900px;" />
   <div><em>High-Level Solution Architecture</em></div>
-  <br/>
-  <img src="images/demo-3.png" alt="Document Embeddings Demo" style="width:80%;max-width:900px;" />
-  <div><em>Chat Interface Demonstration</em></div>
-  <br/>
-  <img src="images/2.png" alt="Agent Flowchart" style="width:80%;max-width:900px;" />
-  <div><em>Document Embeddings Debugging Demo</em></div>
 </div>
-<!-- Optionally, add a project logo/banner above: ![Project Banner](images/banner.png) -->
 
 ## Table of Contents
 - [Overview](#overview)
@@ -26,8 +19,6 @@
 - [Infrastructure as Code](#infrastructure-as-code)
 - [Debugging & Monitoring](#debugging--monitoring)
 
----
-
 ## Overview
 A full-stack AI-powered application that blends:
 
@@ -37,7 +28,15 @@ A full-stack AI-powered application that blends:
 * **React + TypeScript + Vite** SPA for the user interface.
 * **Azure App Service & Bicep templates** for one-command infrastructure deployment.
 
----
+## Demo Screenshots
+
+<div align="center">
+  <img src="images/demo-3.png" alt="Document Embeddings Demo" style="width:80%;max-width:900px;" />
+  <div><em>Chat Interface Demonstration</em></div>
+  <br/>
+  <img src="images/2.png" alt="Agent Flowchart" style="width:80%;max-width:900px;" />
+  <div><em>Document Embeddings Debugging Demo</em></div>
+</div>
 
 ## Repository Structure
 ```
@@ -49,8 +48,6 @@ A full-stack AI-powered application that blends:
 ├─ images/          🖼️  Place project screenshots / diagrams here
 └─ tests/           Pytest test-suite for backend agents
 ```
-
----
 
 ## Backend – FastAPI / Azure OpenAI
 Key capabilities:
@@ -71,8 +68,6 @@ pip install -r requirements.txt
 python app.py  # serves on http://localhost:8000
 ```
 
----
-
 ## Frontend – React + TypeScript + Vite
 The `frontend/` folder is a standard Vite project.
 
@@ -88,8 +83,6 @@ npm run dev   # http://localhost:5173 by default
 npm run build   # outputs to frontend/dist
 ```
 
----
-
 ## Local Development
 ### Backend
 1. Copy `.env.example` → `.env` (create `.env.example` if it doesn't exist – see variables below).
@@ -101,8 +94,6 @@ npm run build   # outputs to frontend/dist
 2. `npm run dev`
 3. Configure proxy or environment variables if the API is not served from the same origin.
 
----
-
 ## Docker & Container Workflow
 Build and run everything in Docker:
 ```bash
@@ -112,8 +103,6 @@ docker build -t agents-backend .
 # run
 docker run --env-file .env -p 8000:8000 agents-backend
 ```
-
----
 
 ## Cloud Deployment (Azure)
 The Bicep templates under `infra/` provision:
@@ -132,8 +121,6 @@ After pushing a new image to ACR, restart the Web App:
 ```bash
 az webapp restart --name agents-dev --resource-group MY-RG
 ```
-
----
 
 ## Environment Configuration
 These variables **must** be provided (e.g. via `.env` in local dev or Key Vault in Azure):
@@ -155,27 +142,19 @@ LANCEDB_ACCOUNT_NAME=<storage-account>
 LANCEDB_ACCOUNT_KEY=<storage-key>
 ```
 
----
-
 ## Infrastructure as Code
 * `infra/main.bicep` – App Service + container config
 * `infra/keyVaultModule.bicep` – secrets & identity wiring
 * `infra/updateAppSettings.bicep` – reference secrets from Key Vault in App Service config
-
----
 
 ## Debugging & Monitoring
 * **Health Check:** `GET /health`
 * **Latency header:** each request includes `X-Process-Time`.
 * **Streaming logs (Azure):** `az webapp log tail --name <app> --resource-group <rg>`
 
----
-
-### Contributing
+## Contributing
 1. Fork & create a feature branch.
 2. Run linters/tests (`pytest`, `eslint`, `prettier`).
 3. Submit a PR.
-
----
 
 © 2025 Agents Platform – MIT licence 
