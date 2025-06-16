@@ -165,7 +165,6 @@ class LegalSupportAgents:
             agent_role=compliance_config["role"],
             agent_goal=compliance_config["goal"],
             agent_backstory=compliance_config["backstory"],
-            platform_capabilities="\n".join([f"- {item}" for item in compliance_config.get("platform_capabilities", [])]),
             response_guidelines=compliance_config.get("response_guidelines"),
             tone=compliance_config.get("tone")
         )

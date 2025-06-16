@@ -63,9 +63,6 @@ answer_compliance_question:
     
     "{query}"
     
-    Platform capabilities:
-    {platform_capabilities}
-    
     Response guidelines:
     {response_guidelines}
     

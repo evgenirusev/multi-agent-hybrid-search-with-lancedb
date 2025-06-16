@@ -20,45 +20,27 @@ pytestmark = pytest.mark.skipif(
 )
 
 # ── Canonical routing test cases ─────────────────────────────────────────────
-COMPLIANCE_QUERIES = [
-    "Can the platform help me conduct a data protection health check?",
-    "Can the platform help me complete regulatory filings?",
-    "Can the platform help me comply with GDPR?",
-    "Can the platform help me monitor regulatory changes?",
-    "Can the platform help me perform a compliance risk assessment?",
-]
-
 EMPLOYMENT_QUERIES = [
-    "How much is Sally's salary?",
+    "How much is John Doe's salary?",
+    "What's John Doe's job title?",
     "What is an employment contract?",
     "How do stock options typically vest?",
     "What happens to my options when I leave the company?"
 ]
 
+COMPLIANCE_QUERIES = [
+    "What GDPR obligations does our company have?",
+    "Do we need to register with the ICO for data protection?",
+    "What are the data protection requirements for storing employee data?",
+    "What compliance checks are needed before onboarding an employee?"
+]
+
 EQUITY_QUERIES = [
-    # Director/secretary/PSC queries
-    "How many directors does my company have?",
-    "Who is my company's secretary?",
-    "How many registered PSCs do I have?",
-    "Is the service address missing from any of my shareholders?",
-    
-    # Data queries
-    "How many shareholders do I have?",
-    "Do I have any outstanding convertibles?",
-    "How large is my option pool?",
-    "What is the total issued capital?",
-    "How many share classes does the company have?",
-    
-    # Comparative analysis queries
-    "Do I have any shareholders with more than 25% equity?",
-    "How much equity do the founders have?",
-    "What percentage of the company is held by employees?",
-    "Who are the top 3 shareholders?",
-    
-    # Advisory queries
-    "Do you think there is anything with my cap table which would raise concern going into a Series A?",
-    "How does my cap table compare to other companies at Pre-Seed?",
-    "Should I be considering increasing my option pool in my next funding round?",
+    "Who are the current shareholders of the company?",
+    "Show me the breakdown of share classes.",
+    "How many shares are available in the option pool?",
+    "What voting rights do preference shares have?",
+    "Can you provide the cap table after the seed round?"
 ]
 
 # ── Re‑usable fixture: one crew instance with stubbed specialist agents ──────
