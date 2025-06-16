@@ -2,12 +2,13 @@
 
 <div align="center">
   <img src="images/agent-architecture.png" alt="System Architecture" style="width:80%;max-width:900px;" />
-  <br/>
-  <img src="images/demo-3.png" alt="Document Embeddings Demo" style="width:80%;max-width:900px;" />
-  <div><em>Document Embeddings Demo</em></div>
+  <div><em>High-Level Solution Architecture</em></div>
   <br/>
   <img src="images/2.png" alt="Agent Flowchart" style="width:80%;max-width:900px;" />
-  <div><em>Agent Flowchart</em></div>
+  <div><em>Chat Interface Demonstration</em></div>
+  <br/>
+  <img src="images/demo-3.png" alt="Document Embeddings Demo" style="width:80%;max-width:900px;" />
+  <div><em>Document Embeddings Debugging Demo</em></div>
 </div>
 <!-- Optionally, add a project logo/banner above: ![Project Banner](images/banner.png) -->
 
