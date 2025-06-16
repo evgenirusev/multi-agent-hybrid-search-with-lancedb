@@ -100,9 +100,9 @@ export function DocumentsManager() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Employment Contracts</CardTitle>
+        <CardTitle>Document Section</CardTitle>
         <CardDescription>
-          Upload and manage your employment contracts
+          Upload and manage your company documents
         </CardDescription>
       </CardHeader>
       <CardContent>
