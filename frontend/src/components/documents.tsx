@@ -100,7 +100,7 @@ export function DocumentsManager() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Document Section</CardTitle>
+        <CardTitle>Document Store</CardTitle>
         <CardDescription>
           Upload and manage your company documents
         </CardDescription>
