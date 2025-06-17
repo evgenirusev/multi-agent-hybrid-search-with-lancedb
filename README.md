@@ -42,11 +42,9 @@ A full-stack AI-powered application that blends:
 ```
 /                   Root of the repo
 │
-├─ ai-engine/       FastAPI backend + RAG helpers + infra scripts
+├─ ai-engine/       FastAPI backend + RAG
 ├─ frontend/        React client (Vite)
-├─ infra/           Bicep IaC templates (referenced from backend docs)
 ├─ images/          🖼️  Place project screenshots / diagrams here
-└─ tests/           Pytest test-suite for backend agents
 ```
 
 ## Backend – FastAPI / Azure OpenAI
