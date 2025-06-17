@@ -7,6 +7,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [About This Repository](#about-this-repository)
 - [Repository Structure](#repository-structure)
 - [Backend – FastAPI / Azure OpenAI](#backend--fastapi--azure-openai)
 - [Frontend – React + TypeScript + Vite](#frontend--react--typescript--vite)
@@ -27,6 +28,16 @@ A full-stack AI-powered application that blends:
 * **LanceDB** vector database for hybrid search.
 * **React + TypeScript + Vite** SPA for the user interface.
 * **Azure App Service & Bicep templates** for one-command infrastructure deployment.
+
+## About This Repository
+This repository is based on the article ["Building a Multi-Agent Hybrid Search System with Azure OpenAI and LanceDB"](https://medium.com/p/f7367a9b1361). The article provides a detailed walkthrough of the architecture, implementation decisions, and best practices that are demonstrated in this codebase. It covers:
+
+* The design of the multi-agent system for specialized legal document search
+* Integration of Azure OpenAI with LanceDB for hybrid search capabilities
+* Implementation of the FastAPI backend and React frontend
+* Deployment strategies using Azure infrastructure
+
+The code in this repository serves as a practical implementation of the concepts and patterns discussed in the article.
 
 ## Demo Screenshots
 
