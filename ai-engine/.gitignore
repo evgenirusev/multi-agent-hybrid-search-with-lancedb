@@ -27,7 +27,7 @@ ENV/
 
 # IDE
 .idea/
-.vscode/
+# VS Code - selective ignoring (see root .gitignore for details)
 *.swp
 *.swo
 
